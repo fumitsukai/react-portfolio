@@ -1,0 +1,14 @@
+.myCard {
+    width: 600px;
+    height: 300px;
+
+    .portfolio-img {
+        filter:brightness(25%);
+        -webkit-filter: brightness((25%));
+        object-fit:cover;
+    }
+
+    .card-text, .card-title {
+        color: var(--linen);
+    }
+}

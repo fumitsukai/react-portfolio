@@ -1,0 +1,77 @@
+.myNav {
+    background-color: var(--raisinBlack);
+
+    .logo {
+        color: var(--linen);
+
+        &:hover {
+            color: var(--vanilla)
+        }
+    }
+}
+
+.nav-links {
+    a {
+        text-decoration: none;
+        color: var(--linen);
+        position: relative;
+
+        i {
+            transition: all 0.3s ease-out;
+        }
+
+        &:hover {
+            color: var(--vanilla);
+
+            svg {
+                opacity: 0;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        &:after {
+            content: '';
+            font-size: 11px;
+            width: 100%;
+            text-align: center;
+            color:var(--linen);
+            opacity: 0;
+            transition: all 0.3s ease-out;
+            letter-spacing: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 35%;
+        }
+    }
+
+    a.home-link {
+        &:after {
+            content:'HOME'
+        }
+    }
+    a.about-link {
+        &:after {
+            content:'ABOUT'
+        }
+    }
+    a.portfolio-link {
+        &:after {
+            content:'WORK'
+        }
+    }
+    a.contact-link {
+        &:after {
+            content:'CONTACT'
+        }
+    }
+
+    a.active {
+        svg {
+        color:var(--persianRed)
+      }
+    }
+}
+

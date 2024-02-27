@@ -1,0 +1,11 @@
+:root {
+    --raisinBlack: #231F20;
+    --persianRed: #BB4430;
+    --verdigris: #7EBDC2;
+    --vanilla: #F3DFA2;
+    --linen: #EFE6DD;
+}
+
+body {
+    background-color: var(--linen);
+}
