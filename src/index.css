@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --raisinBlack: #231F20;
     --persianRed: #BB4430;
@@ -8,4 +10,9 @@
 
 body {
     background-color: var(--linen);
+    font-family: "Montserrat", sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

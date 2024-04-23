@@ -1,38 +1,18 @@
 [
     {
-    "id": 0,
-    "name": "WanderEase",
-    "description": "Project 1",
-    "img": "../../public/assets/images/WanderEase.png"
-    },
-    {
     "id": 1,
     "name": "WanderEase",
-    "description": "Project 1",
-    "img": "../../public/assets/images/WanderEase.png"
+    "description": "WanderEase is a web application that taps into the capabilities of the OpenTripMap API, providing individuals with a tailored adventure planning experience. Users can specify their preferred city, interests, and search radius, resulting in the dynamic creation of a grid showcasing destinations complete with engaging images and detailed descriptions. This intuitive experience is facilitated through the integration of JavaScript, jQuery, Bootstrap, OpenTripMap API, OpenWeatherMap API and Flight data API.",
+    "img": "/assets/images/WanderEase.png",
+    "img2": "/assets/images/WanderEase.png",
+    "techStack": ["HTML", "CSS", "jQuery", "Bootstrap", "JavaScript"]
     },
     {
-    "id": 1,
+    "id": 2,
     "name": "WanderEase",
     "description": "Project 1",
-    "img": "../../public/assets/images/WanderEase.png"
-    },
-    {
-    "id": 1,
-    "name": "WanderEase",
-    "description": "Project 1",
-    "img": "../../public/assets/images/WanderEase.png"
-    },
-    {
-    "id": 1,
-    "name": "WanderEase",
-    "description": "Project 1",
-    "img": "../../public/assets/images/WanderEase.png"
-    },
-    {
-    "id": 1,
-    "name": "WanderEase",
-    "description": "Project 1",
-    "img": "../../public/assets/images/WanderEase.png"
+    "img": "/assets/images/WanderEase.png",
+    "techStack": ["HTML", "CSS", "jQuery", "Bootstrap", "JavaScript"]
     }
+
 ]

@@ -1,0 +1,65 @@
+.logoHome {
+    height:100vh;
+    width: 100vh;
+    top:0;
+    right:12%;
+}
+
+.header {
+    left:20%;
+    top:35%;
+
+    p {
+        color: var(--raisinBlack);
+    }
+
+    h1 {
+        color: var(--raisinBlack);
+        font-size: 48px;
+    
+        .headerText {
+            color: var(--persianRed);
+        }
+    }
+
+    .headerBtn {
+        background-color: var(--verdigris);
+        border-color: var(--verdigris);
+        color: var(--raisinBlack);
+    }
+
+    .smIcons {
+        svg {
+            transition: all .3s ease-out;
+            &:hover {
+                color:var(--persianRed);
+                scale: 1.1;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 150em) {
+    .logoHome {
+        right:12%;
+    }
+
+    .header {
+        left:32%;
+        top:40%;
+    }
+    
+}
+
+@media only screen and (min-width:300px) and (max-width: 1000px) {
+    .logoHome {
+    right:0;
+    }
+    .header {
+        left:50%;
+    }
+}
+
+

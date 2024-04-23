@@ -1,14 +1,83 @@
 .myCard {
-    width: 600px;
+    width: 400px;
     height: 300px;
+    transform-style: flat;
+    
+    background-color: var(--persianRed);
 
     .portfolio-img {
-        filter:brightness(25%);
-        -webkit-filter: brightness((25%));
-        object-fit:cover;
+        filter:brightness(50%);
+        -webkit-filter: brightness(80%);
+    }
+
+    .portfolio-imgGrey {
+        filter: grayscale(1);
+        opacity: 0.5;
+        
+    }
+
+    .portfolio-img, .portfolio-imgGrey {
+        background-color: var(--raisinBlack);
+        position: absolute;
+        /* top:2.3rem; */
+        width: 100%;
+        height: 85%;
+        top:15%;
+        object-fit: cover;
+        padding: 2px;
     }
 
     .card-text, .card-title {
         color: var(--linen);
+    }
+    .cardBody {
+        background-color: var(--raisinBlack);
+        position: relative;
+    }
+
+    .techList {
+        list-style: none;
+        color: var(--linen);
+        top:25%;
+
+        .listItem {
+            background-color: var(--raisinBlack);
+        }
+    }
+
+    p{
+        color: var(--linen);
+    }
+}
+
+
+.clickedCard {
+    position: absolute;
+    z-index: 2000;
+    /* height: 600x;
+    width: 1400px; */
+    background-color: var(--raisinBlack);
+    color: var(--linen);
+    img {
+        object-fit: cover;
+        background-repeat: none;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .cardBtnOpen {
+        background-color: var(--persianRed);
+        color: var(--linen) !important;
+        border-color: var(--persianRed);
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+    .portfolio-img {
+        filter:brightness(20%);
+        -webkit-filter: brightness(70%);
+        opacity: 0.7;
     }
 }

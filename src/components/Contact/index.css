@@ -1,0 +1,42 @@
+.contactForm {
+    background-color: var(--raisinBlack);
+    color: var(--linen);
+
+    .formBtn {
+        background-color: var(--persianRed);
+        color: var(--linen) !important;
+        border-color: var(--persianRed);
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+
+    .inputArea {
+        background-color: var(--linen);
+        color: var(--raisinBlack);
+    }
+
+    .socialMediaIcons {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        svg {
+            transition: all .3s ease-out;
+        }
+        svg:hover {
+            color: var(--verdigris);
+            scale: 1.1;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .contactForm {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
