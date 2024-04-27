@@ -27,12 +27,17 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_ailo6mj", "template_s4taub9", form.current, {
-        publicKey: "mxFxrCy5hgiYK-x2h",
-      })
+      .sendForm(
+        import.meta.env.VITE_SERVICE_KEY,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
-          console.log("Success", form.current);
+          console.log("Success");
         },
         (error) => console.log("Failed", error.text)
       );
