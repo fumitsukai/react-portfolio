@@ -3,7 +3,6 @@
     height: 300px;
     transform-style: flat;
     
-    background-color: var(--persianRed);
 
     .portfolio-img {
         filter:brightness(50%);
@@ -11,8 +10,7 @@
     }
 
     .portfolio-imgGrey {
-        filter: grayscale(1);
-        opacity: 0.5;
+        filter: grayscale(0.9) blur(1px);
         
     }
 
@@ -41,7 +39,7 @@
         top:25%;
 
         .listItem {
-            background-color: var(--raisinBlack);
+            background-color: var(--persianRed);
         }
     }
 
@@ -52,10 +50,9 @@
 
 
 .clickedCard {
-    position: absolute;
+    position: fixed;
     z-index: 2000;
-    /* height: 600x;
-    width: 1400px; */
+    top:30vh;
     background-color: var(--raisinBlack);
     color: var(--linen);
     img {
@@ -79,5 +76,13 @@
         filter:brightness(20%);
         -webkit-filter: brightness(70%);
         opacity: 0.7;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:767px) {
+    .clickedCard {
+        top:12%;
+        max-height: 100vh;
+        height: 90%;
     }
 }

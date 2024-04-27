@@ -4,15 +4,20 @@
     "name": "WanderEase",
     "description": "WanderEase is a web application that taps into the capabilities of the OpenTripMap API, providing individuals with a tailored adventure planning experience. Users can specify their preferred city, interests, and search radius, resulting in the dynamic creation of a grid showcasing destinations complete with engaging images and detailed descriptions. This intuitive experience is facilitated through the integration of JavaScript, jQuery, Bootstrap, OpenTripMap API, OpenWeatherMap API and Flight data API.",
     "img": "/assets/images/WanderEase.png",
-    "img2": "/assets/images/WanderEase.png",
-    "techStack": ["HTML", "CSS", "jQuery", "Bootstrap", "JavaScript"]
+    "img2": "/assets/images/ease.png",
+    "techStack": ["HTML", "CSS", "jQuery", "Bootstrap", "JavaScript"],
+    "urlLive":"https://fumitsukai.github.io/Travel-Destination-Generator/",
+    "urlSource":"https://github.com/fumitsukai/Travel-Destination-Generator"
     },
     {
     "id": 2,
-    "name": "WanderEase",
-    "description": "Project 1",
-    "img": "/assets/images/WanderEase.png",
-    "techStack": ["HTML", "CSS", "jQuery", "Bootstrap", "JavaScript"]
+    "name": "Slice & Sizzle",
+    "description": "The Slice and Sizzle pizza ordering application is tailored for a single pizza place, offering a streamlined experience for customers to browse the menu and place orders. Powered by React for the frontend and utilizing Bootstrap for responsive design, the interface ensures an intuitive user experience. On the backend, Express and Supabase handle data management efficiently, providing a solid foundation for storing and retrieving information from the SQL database. With this technology stack, customers can easily explore the pizza offerings of the restaurant, make selections, and place orders hassle-free.",
+    "img": "/assets/images/slice.png",
+    "img2":"/assets/images/sizzle.png",
+    "techStack": ["React", "Express", "Supabase", "Bootstrap"],
+    "urlLive":"https://pizzafrontend.netlify.app",
+    "urlSource":"https://github.com/abbyedxcmk/pizzabackend"
     }
 
 ]

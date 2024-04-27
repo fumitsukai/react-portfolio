@@ -45,7 +45,7 @@ function PortofolioNavbar() {
                 <FontAwesomeIcon
                   icon={faHome}
                   color="#EFE6DD"
-                  className="d-sm-none d-lg-block"
+                  className="d-none d-lg-block"
                 />
               </Nav.Link>
               <Nav.Link
@@ -57,7 +57,7 @@ function PortofolioNavbar() {
                 <FontAwesomeIcon
                   icon={faUser}
                   color="#EFE6DD"
-                  className="d-sm-none d-lg-block"
+                  className="d-none d-lg-block"
                 />
               </Nav.Link>
               <Nav.Link
@@ -69,7 +69,7 @@ function PortofolioNavbar() {
                 <FontAwesomeIcon
                   icon={faSuitcase}
                   color="#EFE6DD"
-                  className="d-sm-none d-lg-block"
+                  className="d-none d-lg-block"
                 />
               </Nav.Link>
               <Nav.Link
@@ -81,7 +81,7 @@ function PortofolioNavbar() {
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   color="#EFE6DD"
-                  className="d-sm-none d-lg-block"
+                  className="d-none d-lg-block"
                 />
               </Nav.Link>
             </Nav>

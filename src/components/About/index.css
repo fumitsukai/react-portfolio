@@ -1,0 +1,40 @@
+.resumeContainer { 
+    color: var(--raisinBlack);
+    a {
+    color: var(--verdigris);
+}
+    svg {
+    color: var(--raisinBlack);
+}
+    h4, h5 {
+    color: var(--persianRed);
+}
+}
+
+a {
+    transition: all .3s ease-out;
+    &:hover {
+        scale:1.1;
+    }
+}
+
+.projects {
+    svg {
+        transition: all 0.3s ease-out;
+        color: var(--verdigris);
+        &:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:767px) {
+    h5 {
+        font-size: 15px;
+        display: block;
+    }
+    span {
+        float: none;
+    }
+}

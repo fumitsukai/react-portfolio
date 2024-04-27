@@ -10,7 +10,16 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 
-function Project({ id, name, description, img, img2, techStack }) {
+function Project({
+  id,
+  name,
+  description,
+  img,
+  img2,
+  techStack,
+  urlLive,
+  urlSource,
+}) {
   const [selectedId, setSelectedId] = useState(null);
 
   const initialBackground = {
@@ -44,7 +53,7 @@ function Project({ id, name, description, img, img2, techStack }) {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.15,
+        duration: 0.3,
         type: "tween",
         ease: "easeOut",
       },
@@ -99,7 +108,7 @@ function Project({ id, name, description, img, img2, techStack }) {
           variants={initialBackground}
         />
         <Card.Img
-          src={img}
+          src={img2}
           className="portfolio-imgGrey"
           variant="bottom"
           as={m.img}
@@ -121,7 +130,7 @@ function Project({ id, name, description, img, img2, techStack }) {
           <Card
             as={m.div}
             layoutId={selectedId}
-            className="clickedCard shadow"
+            className="clickedCard shadow sm-overflow-scroll lg-mx-5 sm-m-0"
             transition={{ duration: 0.5 }}
           >
             <Row>
@@ -147,8 +156,12 @@ function Project({ id, name, description, img, img2, techStack }) {
                     {description}
                   </CardText>
                   <div className="d-flex justify-content-between">
-                    <Button className="cardBtnOpen">Live Site</Button>
-                    <Button className="cardBtnOpen">Source</Button>
+                    <Link to={urlLive} target="_blank">
+                      <Button className="cardBtnOpen">Live Site</Button>
+                    </Link>
+                    <Link to={urlSource} target="_blank">
+                      <Button className="cardBtnOpen">Source</Button>
+                    </Link>
                   </div>
                 </CardBody>
               </Col>

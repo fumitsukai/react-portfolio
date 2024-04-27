@@ -9,12 +9,15 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import PortofolioNavbar from "../Navbar";
 
 function Home() {
+  const facebook = "https://www.facebook.com/pandelea.alexandru.1/";
+  const linkedin = "https://www.linkedin.com/in/alexandru-pandelea-a2687a2b1/";
+  const github = "https://github.com/fumitsukai";
   return (
     <>
       <Container
+        fluid
         className="vh-90 no-scroll overflow-hidden"
         as={m.div}
         initial={{ opacity: 0 }}
@@ -33,21 +36,21 @@ function Home() {
           </h1>
           <p>JavaScript/React.js/HTML/CSS</p>
           <div className="smIcons mt-3 d-flex gap-5 p-2">
-            <Link>
+            <Link to={github} target="_blank">
               <FontAwesomeIcon
                 icon={faGithub}
                 fontSize="32px"
                 color="#231F20"
               ></FontAwesomeIcon>
             </Link>
-            <Link>
+            <Link to={linkedin} target="_blank">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 fontSize="32px"
                 color="#231F20"
               ></FontAwesomeIcon>
             </Link>
-            <Link>
+            <Link to={facebook} target="_blank">
               <FontAwesomeIcon
                 icon={faFacebook}
                 fontSize="32px"
@@ -55,21 +58,22 @@ function Home() {
               ></FontAwesomeIcon>
             </Link>
           </div>
-          <Button
-            as={m.button}
-            className="headerBtn my-3"
-            href="/contact"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{
-              scale: 0.9,
-              backgroundColor: "#BB4430",
-              borderColor: "#BB4430",
-              color: "#EFE6DD",
-            }}
-            transition={{ duration: 0.3 }}
-          >
-            Contact Me
-          </Button>
+          <Link to="/contact">
+            <Button
+              as={m.button}
+              className="headerBtn my-3"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{
+                scale: 0.9,
+                backgroundColor: "#BB4430",
+                borderColor: "#BB4430",
+                color: "#EFE6DD",
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              Contact Me
+            </Button>
+          </Link>
         </m.div>
         <m.img
           src="/assets/images/nobglogo.png"

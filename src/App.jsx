@@ -5,6 +5,7 @@ import ProjectGallery from "./components/ProjectGallery";
 import Contact from "./components/Contact";
 import { AnimatePresence } from "framer-motion";
 import PortofolioNavbar from "./components/Navbar";
+import { About } from "./components/About";
 import "./index.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/portfolio" element={<ProjectGallery />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
       </AnimatePresence>
     </>

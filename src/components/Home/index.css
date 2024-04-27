@@ -55,10 +55,17 @@
 
 @media only screen and (min-width:300px) and (max-width: 1000px) {
     .logoHome {
-    right:0;
+    right:5%;
     }
     .header {
-        left:50%;
+        left:40%;
+        text-align:center;
+    }
+    .smIcons {
+        justify-content: center;
+    }
+    .headerBtn {
+        align-self: flex-end;
     }
 }
 
