@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import "./index.css";
 import { AnimatePresence, motion as m } from "framer-motion";
 import { Button, CardBody, CardText } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +21,9 @@ function Project({
   urlSource,
 }) {
   const [selectedId, setSelectedId] = useState(null);
+  useEffect(() => {
+    document.body.style.overflow = selectedId ? "hidden" : "unset";
+  }, [selectedId]);
 
   const initialBackground = {
     rest: {

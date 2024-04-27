@@ -81,8 +81,8 @@
 
 @media screen and (min-width:300px) and (max-width:767px) {
     .clickedCard {
-        top:12%;
+        top:0;
         max-height: 100vh;
-        height: 90%;
+        height: 100%;
     }
 }
