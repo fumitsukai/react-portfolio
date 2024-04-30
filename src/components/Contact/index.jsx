@@ -20,6 +20,8 @@ function Contact() {
   const facebook = "https://www.facebook.com/pandelea.alexandru.1/";
   const linkedin = "https://www.linkedin.com/in/alexandru-pandelea-a2687a2b1/";
   const github = "https://github.com/fumitsukai";
+  console.log(import.meta.env.VITE_PUBLIC_KEY);
+  console.log(import.meta.env.VITE_SERVICE_KEY);
 
   const form = useRef();
 
