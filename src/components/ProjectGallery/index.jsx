@@ -15,7 +15,7 @@ function ProjectGallery() {
   return (
     <>
       <Container
-        className="d-flex justify-content-center flex-wrap align-content-around pt-5 wrapper position-relative"
+        className="d-flex justify-content-center flex-wrap align-content-around  wrapper position-relative"
         as={m.div}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -48,7 +48,7 @@ function ProjectGallery() {
         <span className="fw-bold">pandeleaalexandru321@gmail.com</span>
       </m.p>
       <m.p
-        className="text-center m-0"
+        className="text-center m-0 mb-3"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

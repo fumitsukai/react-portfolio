@@ -34,7 +34,6 @@ function Home() {
             Hi, <br /> I'm Alexandru <br />{" "}
             <span className="headerText"> Web Developer</span>
           </h1>
-          <p>JavaScript/React.js/HTML/CSS</p>
           <div className="smIcons mt-3 d-flex gap-5 p-2">
             <Link to={github} target="_blank">
               <FontAwesomeIcon

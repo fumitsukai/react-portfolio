@@ -20,8 +20,6 @@ function Contact() {
   const facebook = "https://www.facebook.com/pandelea.alexandru.1/";
   const linkedin = "https://www.linkedin.com/in/alexandru-pandelea-a2687a2b1/";
   const github = "https://github.com/fumitsukai";
-  console.log(import.meta.env.VITE_PUBLIC_KEY);
-  console.log(import.meta.env.VITE_SERVICE_KEY);
 
   const form = useRef();
 
@@ -47,10 +45,10 @@ function Contact() {
   };
   return (
     <>
-      <Container className="formContainer container-md no-scroll lg-d-grid lg-col-6">
+      <Container className="formContainer container-md no-scroll text-center d-flex justify-content-center">
         <Form
           as={m.form}
-          className="p-5 mt-5 lg-mx-5 contactForm rounded shadow"
+          className="p-5 mt-4 lg-mx-5 contactForm rounded shadow w-100"
           ref={form}
           onSubmit={handleSubmit}
           initial={{ scale: 0.5 }}

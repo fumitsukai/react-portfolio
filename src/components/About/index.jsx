@@ -31,8 +31,7 @@ export function About() {
         exit={{ opacity: 0, y: "100%" }}
       >
         <h1 className="text-center mb-3">Resume</h1>
-        <h3 className="text-center">Alexandru Pandelea</h3>
-        <h4 className="text-center mb-5">Fullstack Developer</h4>
+        <h3 className="text-center mb-5">Alexandru Pandelea</h3>
         <div className="contactInfo d-flex justify-content-evenly flex-wrap mb-5">
           <p>
             <FontAwesomeIcon
