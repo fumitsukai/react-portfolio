@@ -68,9 +68,11 @@ export function About() {
         </div>
         <div className="skills mb-5">
           <h4>SKILLS</h4>
-          {skills.map((item) => (
-            <p className="d-inline me-5">{item}</p>
-          ))}
+          <div className="d-flex flex-wrap justify-content-evenly">
+            {skills.map((item) => (
+              <p className="d-inline sm-d-block me-5">{item}</p>
+            ))}
+          </div>
         </div>
         <div className="experience">
           <h4 className="mb-3">EXPERIENCE</h4>
