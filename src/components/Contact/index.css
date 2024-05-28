@@ -39,4 +39,9 @@
     }
 }
 
+@media screen and (min-width:1400px) {
+.formContainer {
+    padding-top: 150px;
+}
+}
 

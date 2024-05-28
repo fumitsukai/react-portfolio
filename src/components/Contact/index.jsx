@@ -45,10 +45,10 @@ function Contact() {
   };
   return (
     <>
-      <Container className="formContainer container-md no-scroll text-center d-flex justify-content-center">
+      <Container className="formContainer container-md no-scroll text-center d-flex justify-content-center h-100">
         <Form
           as={m.form}
-          className="p-5 mt-4 lg-mx-5 contactForm rounded shadow w-100"
+          className="p-5 mt-4 contactForm rounded shadow w-100"
           ref={form}
           onSubmit={handleSubmit}
           initial={{ scale: 0.5 }}
